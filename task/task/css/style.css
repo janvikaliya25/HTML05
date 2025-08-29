@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ff3c3c;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.toggle-menu {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#hero {
+  height: 700px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#hero img {
+  height: 100%;
+  width: 100%;
+}
+
+#hero #content {
+  height: 400px;
+  width: 33%;
+  position: absolute;
+  top: 17%;
+  left: 12%;
+}
+
+/* #hero #content .slide {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+#hero #content .slide.active {
+  left: 0;
+  opacity: 1;
+} */
+
+#hero #content h1 {
+  color: white;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+#hero #content h1 span {
+  color: #ff8b38;
+  font-weight: lighter;
+}
+
+#hero #content h2 {
+  font-size: 40px;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+#hero #content hr {
+  width: 15%;
+  margin-top: 20px;
+}
+
+#hero #content p {
+  color: white;
+  margin-top: 20px;
+}
+
+#hero #content .btn {
+  margin-top: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  height: 40px;
+  width: 150px;
+}
+
+#hero #content .btn:hover {
+  background-color: white;
+  border: none;
+  color: black;
+  transition: 1s;
+}
+
+#hero #form {
+  height: 350px;
+  width: 22%;
+  position: absolute;
+  top: 22%;
+  right: 12%;
+  background-color: #ffffff;
+  padding: 40px 35px;
+}
+
+#form h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  width: 100%;
+}
+
+#form h2 span {
+  color: orange;
+  font-weight: bold;
+}
+
+#form .trial-form {
+  margin-top: 30px;
+}
+
+.trial-form input {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+#form button {
+  background-color: #ff8b38;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#form button:hover {
+  background: #e66900;
+}
+
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .toggle-menu {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    width: 100%;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    padding: 10px 20px;
+    border-top: 1px solid #444;
+  }
+
+  .nav-links li a {
+    font-size: 18px;
+  }
+
+  .form-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .trial-form h2 {
+    font-size: 18px;
+  }
+
+  .trial-form input {
+    font-size: 13px;
+  }
+
+  .trial-form button {
+    font-size: 14px;
+  }
+}
